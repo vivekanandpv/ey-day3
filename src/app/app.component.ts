@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { SampleComponent } from './sample/sample.component';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +7,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  @ViewChild('header')
-  headerElement!: ElementRef<HTMLElement>;
+  title1 = 'This is title 1';
+  title2 = 'This is title 2';
 
-  country = 'India';
-
-  ngAfterViewInit() {
-    this.headerElement.nativeElement.style.color = 'red';
-    this.headerElement.nativeElement.style.border = '1px solid blue';
-  }
+  cssClassListWarning = ['alert', 'alert-warning'];
+  cssClassListInfo = ['alert', 'alert-info'];
 }

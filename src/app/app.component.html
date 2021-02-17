@@ -3,7 +3,12 @@
 
   <hr />
 
-  <h3 #header>This is a specimen</h3>
-
-  <button>Click Here!</button>
+  <app-sample [cssClass]="cssClassListWarning">
+    <h4>Some header</h4>
+    <hr />
+    <p>{{ title1 }}</p>
+  </app-sample>
+  <app-sample [cssClass]="cssClassListInfo">
+    <h3>{{ title1 }}</h3>
+  </app-sample>
 </div>
