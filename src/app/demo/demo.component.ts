@@ -10,4 +10,8 @@ export class DemoComponent implements OnInit {
   constructor(public counterService: CounterService) {}
 
   ngOnInit(): void {}
+
+  decrement() {
+    this.counterService.decrementCounter();
+  }
 }

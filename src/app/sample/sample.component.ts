@@ -20,6 +20,6 @@ export class SampleComponent {
   constructor(public counterService: CounterService) {}
 
   increment() {
-    ++this.counterService.counter;
+    this.counterService.incrementCounter();
   }
 }
